@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TVLink: a private TV remote for your home Wi-Fi</title>
+<meta name="description" content="TVLink is a free Android TV remote that talks straight to your TV over your home Wi-Fi, or by infrared on phones with an IR blaster. Samsung, LG, Sony, Philips, Panasonic, Android TV and Google TV. No account, adverts or tracking.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/tvlink/">
+<meta name="theme-color" content="#f4f2fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#100e1d" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TVLink">
+<meta property="og:title" content="TVLink: a private TV remote for your home Wi-Fi">
+<meta property="og:description" content="TVLink is a free Android TV remote that talks straight to your TV over your home Wi-Fi, or by infrared on phones with an IR blaster. Samsung, LG, Sony, Philips, Panasonic, Android TV and Google TV. No account, adverts or tracking.">
+<meta property="og:url" content="https://customgpter.github.io/tvlink/">
+<meta property="og:image" content="https://customgpter.github.io/tvlink/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TVLink&#x27;s remote: power, input and guide keys above a large direction pad, with the Living room TV connected">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"TVLink","url":"https://customgpter.github.io/tvlink/","description":"TVLink is a free Android TV remote that talks straight to your TV over your home Wi-Fi, or by infrared on phones with an IR blaster. Samsung, LG, Sony, Philips, Panasonic, Android TV and Google TV. No account, adverts or tracking.","applicationCategory":"UtilitiesApplication","operatingSystem":"Android 10 or later","softwareVersion":"1.2.1","downloadUrl":"https://github.com/CustomGPTer/tvlink/releases/latest/download/TVLink.apk","releaseNotes":"https://customgpter.github.io/tvlink/releases.html","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"inLanguage":"en-GB","image":"https://customgpter.github.io/tvlink/assets/og.png","featureList":["Wi-Fi control","Infrared too","Fire TV","Honest about support","Four ways to steer","Eight skins","Your buttons, your order","Per TV","Favourites","Streaming buttons","Activities","Keyboard and numbers"],"author":{"@type":"Person","name":"Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is TVLink really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no paid version, no subscription and no adverts, and nothing in the app is locked."}},{"@type":"Question","name":"Is it on Google Play?","acceptedAnswer":{"@type":"Answer","text":"No. TVLink is a personal project and is downloaded from this site as an Android app file. It needs Android 10 or later."}},{"@type":"Question","name":"Will it work with my TV?","acceptedAnswer":{"@type":"Answer","text":"TVLink works with most smart TVs from Samsung, LG, Sony, Philips and Panasonic, and with Android TV and Google TV sets, over your home Wi-Fi. Exactly which buttons work depends on the TV's model and software. If your phone has an IR blaster, infrared covers many older sets as well. Roku TVs are not supported over Wi-Fi."}},{"@type":"Question","name":"Why does it ask to pair?","acceptedAnswer":{"@type":"Answer","text":"Smart TVs only take commands from apps you have approved. You do it once: accept TVLink on the TV, or type the code the TV shows. TVLink keeps that approval encrypted on your phone."}},{"@type":"Question","name":"Does it need the internet?","acceptedAnswer":{"@type":"Answer","text":"No. TVLink only talks to TVs on your own Wi-Fi, and makes no requests to the internet. Your TV's own apps may still use the internet as normal."}},{"@type":"Question","name":"Can it mirror my phone or cast videos?","acceptedAnswer":{"@type":"Answer","text":"No. TVLink is a remote control only. It has no casting, screen sharing or mirroring, which keeps it small and private."}},{"@type":"Question","name":"Which phones have an IR blaster?","acceptedAnswer":{"@type":"Answer","text":"Some Xiaomi, Redmi, POCO, Honor and Huawei phones, among others. TVLink checks for one and only offers infrared when your phone has it."}},{"@type":"Question","name":"What if I forget my TVLink PIN?","acceptedAnswer":{"@type":"Answer","text":"Clear TVLink's storage in Android's app settings to start again. Your saved TVs and layouts are removed, so keep an encrypted backup."}},{"@type":"Question","name":"How do I get new versions?","acceptedAnswer":{"@type":"Answer","text":"Open Settings and tap Check for updates. It opens the releases page in your browser. Install the new file over the old one, without uninstalling first, and your TVs, pairings and settings are kept."}},{"@type":"Question","name":"Who made it?","acceptedAnswer":{"@type":"Answer","text":"TVLink is made by Jonathan Jackson, an independent developer in the United Kingdom. It is not connected with any TV maker or streaming service, and their names and logos belong to their owners."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="TVLink home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#18162b"/><path d="M36 25.5Q54 9 72 25.5M43 34Q54 24.5 65 34" fill="none" stroke="#bca6ff" stroke-width="4" stroke-linecap="round"/><rect x="36" y="42" width="36" height="51" rx="6" fill="#a78bfa"/><path fill="#221a36" d="M51 52h6v7h7v6h-7v7h-6v-7h-7v-6h7zM46 80h5v5h-5zM57 80h5v5h-5z"/></svg><span>TVLink</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/tvlink/releases/latest/download/TVLink.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>Your TV. Your control.</h1>
+<p class="lede">TVLink turns your phone into a calm, clear remote for the TVs in your home. It finds them on your Wi-Fi, pairs once, and then works like the remote that came in the box, with a proper direction pad, volume, playback, number keys and a keyboard for searching.</p><p class="lede">It talks straight to your TV over your own network. There is no account, no cloud service, no adverts and no tracking, and nothing you do in TVLink leaves your home.</p>
+
+<p class="get" id="download"><a class="button" href="https://github.com/CustomGPTer/tvlink/releases/latest/download/TVLink.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a><a class="aside" href="#install">How to install</a></p>
+<ul class="pills"><li>Version 1.2.1</li><li>Android 10 or later</li><li>1.9 MB</li></ul>
+<p class="facts">Free, with nothing to unlock. No adverts, no account with the developer, no tracking. <a href="compare.html">Compare</a> or read the <a href="releases.html">release notes</a>.</p>
+<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</p>
+</div>
+<div class="hero-phone"><div class="phone"><img src="./assets/screens/remote.png" alt="The remote: power, input and guide, a large direction pad, and the number pad and keyboard one tap away." width="393" height="852" fetchpriority="high"></div></div>
+</div>
+</div>
+
+<section class="promises" aria-label="In short">
+<div class="wrap"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No adverts</b><span>None in the app and none on this site.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No account</b><span>Open it, find your TV, pair, done.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>Stays at home</b><span>Commands go only to TVs on your own network.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>Every room</b><span>Save each TV with its own layout and favourites.</span></span></li></ul></div>
+</section>
+
+<section id="screens" aria-labelledby="screens-h">
+<div class="wrap">
+<h2 id="screens-h">A look inside</h2>
+<p class="intro">These are the real screens, drawn by TVLink&#x27;s own screen tests with made-up TVs. No TV was connected for these pictures. Swipe or scroll sideways to see them all.</p>
+<div class="gallery" tabindex="0" role="region" aria-label="Screens from TVLink"><figure class="shot"><div class="phone"><img src="./assets/screens/remote.png" alt="The remote: power, input and guide, a large direction pad, and the number pad and keyboard one tap away." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The remote: power, input and guide, a large direction pad, and the number pad and keyboard one tap away.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/streaming.png" alt="Favourites for channels and HDMI inputs, and streaming buttons that open apps already on the TV." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Favourites for channels and HDMI inputs, and streaming buttons that open apps already on the TV.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/devices.png" alt="Every TV in the house, found on your Wi-Fi or added by hand, each with its own room." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Every TV in the house, found on your Wi-Fi or added by hand, each with its own room.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/activities.png" alt="Activities run a sequence of buttons for you, such as switching on and moving to the console." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Activities run a sequence of buttons for you, such as switching on and moving to the console.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/settings.png" alt="Skins, accents, layouts and the small details, saved for each TV." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Skins, accents, layouts and the small details, saved for each TV.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/light.png" alt="The same remote in the light appearance." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The same remote in the light appearance.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/swipe.png" alt="Swipe mode: move around the TV&#x27;s menus with your thumb and tap to select." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Swipe mode: move around the TV&#x27;s menus with your thumb and tap to select.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/welcome.png" alt="The welcome screen. Direct local connections, no account, no adverts, no tracking." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The welcome screen. Direct local connections, no account, no adverts, no tracking.</figcaption></figure></div>
+</div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+<div class="wrap">
+<h2 id="how-h">How it works</h2>
+<p class="intro">Your phone and TV just need to be on the same home Wi-Fi.</p>
+<ol class="steps"><li><h3>Find your TV</h3><p>Scan your home network, or type the TV's address. TVLink lists what it finds by name and make.</p></li><li><h3>Pair once</h3><p>Approve TVLink on the TV, or type the code the TV shows. TVLink remembers the pairing on your phone.</p></li><li><h3>Use it like a remote</h3><p>Direction pad, volume, playback, numbers, typing, favourites and activities, for every TV you save.</p></li></ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Everything is in, and all of it is free</h2>
+<p class="intro">Nothing below is held back for a paid tier, because there is no paid tier.</p>
+<div class="groups"><div class="group"><h3>Works with your TV</h3><dl><div><dt>Wi-Fi control</dt><dd>Samsung Tizen, LG webOS, Sony BRAVIA, Philips, Panasonic VIERA, and Android TV and Google TV sets from Sony, TCL, Hisense, Philips, Sharp, Toshiba and others.</dd></div><div><dt>Infrared too</dt><dd>On a phone with an IR blaster, 173 built-in code sets cover 15 TV makes, with no Wi-Fi needed.</dd></div><div><dt>Fire TV</dt><dd>Advanced control of compatible Fire OS sets and sticks, when you switch on network debugging on the TV yourself.</dd></div><div><dt>Honest about support</dt><dd>Every connection type is listed with what it can and cannot do. TVLink never pretends a button works when the TV does not offer it.</dd></div></dl></div><div class="group"><h3>A remote you can make your own</h3><dl><div><dt>Four ways to steer</dt><dd>A classic direction pad, a large pad, a compact remote and swipe mode.</dd></div><div><dt>Eight skins</dt><dd>Eight hand-made remote skins, your own accent colour, and light, dark or follow-the-phone appearance.</dd></div><div><dt>Your buttons, your order</dt><dd>Add, hide and reorder the extra controls, make the buttons bigger, and set them up for left-handed use.</dd></div><div><dt>Per TV</dt><dd>Every saved TV keeps its own layout, skin and favourites.</dd></div></dl></div><div class="group"><h3>Quicker than the box remote</h3><dl><div><dt>Favourites</dt><dd>One tap for a channel, an HDMI input or an app on the TV.</dd></div><div><dt>Streaming buttons</dt><dd>Optional buttons for the big streaming services. Where the TV can say which apps it has, TVLink shows only the ones that are there.</dd></div><div><dt>Activities</dt><dd>A sequence of buttons with pauses in between, such as power on, HDMI 2, volume down.</dd></div><div><dt>Keyboard and numbers</dt><dd>Type searches straight onto the TV where it allows, and a full number pad for channels.</dd></div></dl></div><div class="group"><h3>Always to hand</h3><dl><div><dt>Widgets</dt><dd>Home-screen widgets and a launcher shortcut for the buttons you use most.</dd></div><div><dt>Notification remote</dt><dd>Optional controls in your notifications while TVLink is connected.</dd></div><div><dt>Sleep timer</dt><dd>Your phone can send a power-off at a time you choose, where the TV supports it.</dd></div><div><dt>Wake the TV</dt><dd>Wake-on-LAN for TVs set up to accept it.</dd></div></dl></div><div class="group"><h3>Private by design</h3><dl><div><dt>Nothing leaves your home</dt><dd>TVLink sends commands only to private addresses on your own network. It makes no requests to the internet at all.</dd></div><div><dt>Locked and encrypted</dt><dd>An optional PIN or fingerprint lock, settings encrypted on your phone, and password-encrypted backups that leave out every pairing key.</dd></div></dl></div></div>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Your living room stays your business</h2>
+<ul class="plain"><li><h3>No account, no tracking</h3><p>No sign-up, adverts, analytics or crash reporting. The developer receives nothing.</p></li><li><h3>Home network only</h3><p>TVLink talks only to TVs on private addresses on your Wi-Fi. It refuses internet addresses.</p></li><li><h3>Encrypted on your phone</h3><p>Saved TVs, pairings and settings are encrypted with a key kept in your phone's secure hardware.</p></li></ul>
+</div>
+</section>
+
+<section id="install" aria-labelledby="install-h">
+<div class="wrap">
+<h2 id="install-h">Installing and updating</h2>
+<p class="intro">TVLink is not on Google Play, so your phone asks a couple of extra questions the first time.</p>
+<ol class="steps"><li><h3>Download the app file</h3><p>Tap Download on your phone. The file is called TVLink.apk and is about 1.9 MB. If Chrome says the file might be harmful, choose Download anyway.</p></li><li><h3>Allow the install</h3><p>Open the file. The first time, Android asks you to allow your browser to install apps. Allow it, go back and tap Install. If Google Play Protect steps in, choose More details, then Install anyway.</p></li><li><h3>Updating later</h3><p>Open Settings, About TVLink and tap Check for updates. It opens the releases page in your browser; if a newer TVLink is out, download it and install it over this one. Your TVs, pairings and settings are kept.</p></li></ol>
+<p class="after-table">Version 1.2.1, released 26 November 2026. See the <a href="releases.html">release notes</a>, or <a href="releases.html#checking">check your download</a>.</p>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq"><details><summary>Is TVLink really free?</summary><p>Yes. There is no paid version, no subscription and no adverts, and nothing in the app is locked.</p></details><details><summary>Is it on Google Play?</summary><p>No. TVLink is a personal project and is downloaded from this site as an Android app file. It needs Android 10 or later.</p></details><details><summary>Will it work with my TV?</summary><p>TVLink works with most smart TVs from Samsung, LG, Sony, Philips and Panasonic, and with Android TV and Google TV sets, over your home Wi-Fi. Exactly which buttons work depends on the TV's model and software. If your phone has an IR blaster, infrared covers many older sets as well. Roku TVs are not supported over Wi-Fi.</p></details><details><summary>Why does it ask to pair?</summary><p>Smart TVs only take commands from apps you have approved. You do it once: accept TVLink on the TV, or type the code the TV shows. TVLink keeps that approval encrypted on your phone.</p></details><details><summary>Does it need the internet?</summary><p>No. TVLink only talks to TVs on your own Wi-Fi, and makes no requests to the internet. Your TV's own apps may still use the internet as normal.</p></details><details><summary>Can it mirror my phone or cast videos?</summary><p>No. TVLink is a remote control only. It has no casting, screen sharing or mirroring, which keeps it small and private.</p></details><details><summary>Which phones have an IR blaster?</summary><p>Some Xiaomi, Redmi, POCO, Honor and Huawei phones, among others. TVLink checks for one and only offers infrared when your phone has it.</p></details><details><summary>What if I forget my TVLink PIN?</summary><p>Clear TVLink's storage in Android's app settings to start again. Your saved TVs and layouts are removed, so keep an encrypted backup.</p></details><details><summary>How do I get new versions?</summary><p>Open Settings and tap Check for updates. It opens the releases page in your browser. Install the new file over the old one, without uninstalling first, and your TVs, pairings and settings are kept.</p></details><details><summary>Who made it?</summary><p>TVLink is made by Jonathan Jackson, an independent developer in the United Kingdom. It is not connected with any TV maker or streaming service, and their names and logos belong to their owners.</p></details></div>
+</div>
+</section>
+
+<section class="closing" aria-labelledby="closing-h">
+<div class="wrap">
+<div><h2 id="closing-h">One remote for every room</h2><p>Free, with no adverts and nothing to unlock. Made by the developer of several other free Android apps: <a href="more-apps.html">see them all</a>.</p></div>
+<a class="button" href="https://github.com/CustomGPTer/tvlink/releases/latest/download/TVLink.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a>
+</div>
+</section>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="TVLink home"><svg viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#18162b"/><path d="M36 25.5Q54 9 72 25.5M43 34Q54 24.5 65 34" fill="none" stroke="#bca6ff" stroke-width="4" stroke-linecap="round"/><rect x="36" y="42" width="36" height="51" rx="6" fill="#a78bfa"/><path fill="#221a36" d="M51 52h6v7h7v6h-7v7h-6v-7h-7v-6h7zM46 80h5v5h-5zM57 80h5v5h-5z"/></svg><span>TVLink</span></a>
+<p>&copy; 2026 Jonathan Jackson. TVLink is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/tvlink/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
+</body>
+</html>
